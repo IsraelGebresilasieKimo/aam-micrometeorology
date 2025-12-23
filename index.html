@@ -8,72 +8,99 @@
   <style>
     body {
       height: 100vh;
-      background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
+      color: #ffffff;
       position: relative;
     }
 
-    /* Title at top center */
+    /* ===== TITLE ===== */
     .title {
       position: absolute;
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 5rem;
+      font-size: 1.9rem;
       font-weight: bold;
+      background: rgba(0, 85, 170, 0.9);
+      padding: 12px 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      white-space: nowrap;
+      text-align: center;
     }
 
-    /* Navigation links beside each other */
+    /* ===== PROFILE PHOTO ===== */
+    .profile-photo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ===== NAVIGATION ===== */
     .nav {
       position: absolute;
-      top: 80px; /* below the title */
+      top: 160px;   /* 2–3 line space below title */
       left: 20px;
       display: flex;
-      gap: 20px; /* space between links */
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .nav a {
       padding: 8px 16px;
       text-decoration: none;
       color: #fff;
+      font-weight: bold;
       border-radius: 12px;
       transition: all 0.3s ease;
-      font-weight: bold;
     }
 
     .nav a:hover {
-      background: #fff;
-      color: #000;
+      background: #ffffff;
+      color: #000000;
     }
 
-    /* Different colors for each link */
-    .nav a.about { background-color: #ff6f61; }      /* red-ish */
-    .nav a.cfd { background-color: #6b5b95; }        /* purple */
-    .nav a.aam { background-color: #88b04b; }        /* green */
-    .nav a.lit { background-color: #f7cac9; }        /* pink */
-    .nav a.pub { background-color: #92a8d1; }        /* blue */
-    .nav a.orcid { background-color: #f8e71c; }      /* yellow */
+    /* ===== LINK COLORS ===== */
+    .about { background: #ff6f61; }
+    .cfd { background: #6b5b95; }
+    .aam { background: #88b04b; }
+    .lit { background: #f7cac9; color: #000; }
+    .pub { background: #92a8d1; }
+    .orcid { background: #a6ce39; }
 
   </style>
 </head>
 
 <body>
 
-  <!-- Title at top center -->
+  <!-- ===== TITLE ===== -->
   <div class="title">Weather Robust Advanced Air Mobility</div>
 
-  <!-- Navigation links -->
+  <!-- ===== PROFILE PHOTO ===== -->
+  <img src="assets/images/myphoto.jpg"
+       alt="Israel Gebresilasie Kimo"
+       class="profile-photo">
+
+  <!-- ===== NAVIGATION ===== -->
   <div class="nav">
     <a href="#about" class="about">About</a>
-    <a href="#CFD and RWIND" class="cfd">CFD and RWIND</a>
-    <a href="#AAM" class="aam">AAM</a>
-    <a href="#Litrature review" class="lit">Litrature review</a>
+    <a href="#cfd" class="cfd">CFD & RWIND</a>
+    <a href="#aam" class="aam">AAM</a>
+    <a href="#literature" class="lit">Literature Review</a>
     <a href="#publications" class="pub">Publications</a>
-    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank" class="orcid">ORCID</a>
+    <a href="https://orcid.org/0000-0001-9038-5634"
+       target="_blank"
+       class="orcid">ORCID</a>
   </div>
 
 </body>
 </html>
+
