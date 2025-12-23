@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Israel Gebresilasie Kimo</title>
+  <title>My GitHub Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -17,94 +17,72 @@
     /* Background */
     body {
       height: 100vh;
-      background: 
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("assets/images/background.jpg.jfif") no-repeat center center/cover;
+      background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
       color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative;
     }
 
-    /* Main content box */
-    .container {
-      text-align: center;
-      max-width: 800px;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.55);
-      border-radius: 12px;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 400;
-      margin-bottom: 25px;
-      color: #e0e0e0;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    /* Navigation buttons */
+    /* Navigation links individually positioned */
     .nav a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 22px;
+      position: absolute; /* allows free positioning */
+      padding: 8px 16px;
       text-decoration: none;
-      color: #ffffff;
-      border: 1px solid #ffffff;
-      border-radius: 25px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 12px;
       transition: all 0.3s ease;
     }
 
     .nav a:hover {
-      background: #ffffff;
-      color: #000000;
+      background: #fff;
+      color: #000;
     }
 
-    footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #cccccc;
+    /* Example positions for each link */
+    .nav a.about {
+      top: 20px;
+      right: 20px; /* top-right */
     }
+
+    .nav a.cfd {
+      top: 80px;
+      left: 50px; /* top-left */
+    }
+
+    .nav a.aam {
+      top: 150px;
+      left: 20px; /* below CFD */
+    }
+
+    .nav a.lit {
+      top: 200px;
+      right: 100px; /* top-right */
+    }
+
+    .nav a.pub {
+      bottom: 50px;
+      left: 50%; /* bottom-center */
+      transform: translateX(-50%);
+    }
+
+    .nav a.orcid {
+      bottom: 20px;
+      right: 20px; /* bottom-right */
+    }
+
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Israel Gebresilasie Kimo</h1>
-    <h2>Lecturer & Researcher | Meteorology and Climate </h2>
-
-    <p>
-      I am a lecturer and researcher at Arba Minch University, Ethiopia,
-      with expertise in Earth System Science, atmosphere–ocean interaction,
-      atmospheric dynamics, and numerical modeling.
-    </p>
-
-    <div class="nav">
-      <a href="#about">About</a>
-      <a href="#CFD and RWIND<">CFD and RWIND</a>
-      <a href="#AAM">AAM</a>
-	  <a href="#Litrature rivew">Litrature rivew</a>
-      <a href="#publications">Publications</a>
-      <a href="https://orcid.org/0000-0001-9038-5634" target="_blank">ORCID</a>
-    </div>
-
-    <footer>
-      © 2025 Israel Gebresilasie Kimo
-    </footer>
+  <div class="nav">
+    <a href="#about" class="about">About</a>
+    <a href="#CFD and RWIND" class="cfd">CFD and RWIND</a>
+    <a href="#AAM" class="aam">AAM</a>
+    <a href="#Litrature review" class="lit">Litrature review</a>
+    <a href="#publications" class="pub">Publications</a>
+    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank" class="orcid">ORCID</a>
   </div>
 
 </body>
 </html>
-
-
