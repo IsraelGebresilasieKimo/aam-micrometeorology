@@ -6,31 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-
-    /* Background */
     body {
       height: 100vh;
       background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
-      color: #ffffff;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
       position: relative;
     }
 
-    /* Navigation links individually positioned */
+    /* Title at top center */
+    .title {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Navigation links beside each other */
+    .nav {
+      position: absolute;
+      top: 80px; /* below the title */
+      left: 20px;
+      display: flex;
+      gap: 20px; /* space between links */
+    }
+
     .nav a {
-      position: absolute; /* allows free positioning */
       padding: 8px 16px;
       text-decoration: none;
       color: #fff;
-      border: 1px solid #fff;
       border-radius: 12px;
       transition: all 0.3s ease;
+      font-weight: bold;
     }
 
     .nav a:hover {
@@ -38,45 +49,23 @@
       color: #000;
     }
 
-.nav a.about {
-  top: 20px;
-  left: 20px; /* top-left */
-}
-
-.nav a.cfd {
-  top: 20px;      /* same horizontal line as About */
-  left: 220px;    /* beside About with 2 spaces gap */
-}
-
-.nav a.aam {
-  top: 20px;      /* same horizontal line */
-  left: 420px;    /* beside CFD with 2 spaces gap */
-}
-
-.nav a.lit {
-  top: 20px;
-  left: 620px;    /* beside AAM with 2 spaces gap */
-}
-
-.nav a.pub {
-  top: 20px;
-  left: 820px;    /* beside Literature Review */
-}
-
-.nav a.orcid {
-  top: 20px;
-  left: 1020px;   /* beside Publications */
-}
-
-
-
-    
+    /* Different colors for each link */
+    .nav a.about { background-color: #ff6f61; }      /* red-ish */
+    .nav a.cfd { background-color: #6b5b95; }        /* purple */
+    .nav a.aam { background-color: #88b04b; }        /* green */
+    .nav a.lit { background-color: #f7cac9; }        /* pink */
+    .nav a.pub { background-color: #92a8d1; }        /* blue */
+    .nav a.orcid { background-color: #f8e71c; }      /* yellow */
 
   </style>
 </head>
 
 <body>
 
+  <!-- Title at top center -->
+  <div class="title">My GitHub Page</div>
+
+  <!-- Navigation links -->
   <div class="nav">
     <a href="#about" class="about">About</a>
     <a href="#CFD and RWIND" class="cfd">CFD and RWIND</a>
