@@ -1,140 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Robust Advanced Air Mobility</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Weather Robust Advanced Air Mobility</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
-      color: #ffffff;
-      position: relative;
-    }
+<style>
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: url("assets/images/background.jpg.jfif") no-repeat center/cover;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-    /* ===== TITLE ===== */
-    .title {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.9rem;
-      font-weight: bold;
-      background: rgba(0, 85, 170, 0.9);
-      padding: 12px 28px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      white-space: nowrap;
-      text-align: center;
-    }
+/* ===== HEADER ===== */
+header {
+  position: relative;
+  padding: 30px 20px 10px;
+  text-align: center;
+}
 
-    /* ===== PROFILE PHOTO ===== */
-    .profile-photo {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 220px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 2px solid #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    /* ===== NAVIGATION ===== */
-    .nav {
-      position: absolute;
-      top: 160px;
-      left: 20px;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      padding: 8px 16px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-    }
-
-    .nav a:hover {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    /* ===== LINK COLORS ===== */
-    .about { background: #ff6f61; }
-    .cfd { background: #6b5b95; }
-    .aam { background: #88b04b; }
-    .lit { background: #f7cac9; color: #000; }
-    .pub { background: #92a8d1; }
-    .orcid { background: #a6ce39; }
-
-    /* ===== HOME CONTENT ===== */
-    .home {
-      margin: 260px auto 0;
-      max-width: 900px;
-      background: rgba(0, 0, 0, 0.55);
-      padding: 30px 40px;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-      line-height: 1.7;
-    }
-
-    .home h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #aad4ff;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.1rem;
-      color: #dddddd;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- TITLE -->
-  <div class="title">Weather Robust Advanced Air Mobility</div>
-
-  <!-- PHOTO -->
-  <img src="assets/images/myphoto.jpg"
-       alt="Israel Gebresilasie Kimo"
-       class="profile-photo">
-
-  <!-- NAV -->
-  <div class="nav">
-    <a href="#about" class="about">About</a>
-    <a href="#cfd" class="cfd">CFD & RWIND</a>
-    <a href="#aam" class="aam">AAM</a>
-    <a href="#literature" class="lit">Literature Review</a>
-    <a href="#publications" class="pub">Publications</a>
-    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank" class="orcid">ORCID</a>
-  </div>
-
-  <!-- HOME CONTENT -->
-  <section class="home" id="about">
-    <h2>Welcome</h2>
-
-    <p>
-      I am Israel Gebresilasie Kimo, a lecturer and researcher in meteorology and hydrology
-      with research interests in urban microclimate, wind–structure interaction, and
-      Advanced Air Mobility (AAM).
-    </p>
-
-    <p>
-      My
+/* TITLE */
+.title {
+  display: inline-block;
+  background: rgba(0, 85, 170, 0.9);
+  padding: 14px 30px;
+  border-radius: 12px
