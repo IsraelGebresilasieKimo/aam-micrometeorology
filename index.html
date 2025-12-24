@@ -7,7 +7,7 @@
 
   <style>
     body {
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       background: url("assets/images/background.jpg.jfif") no-repeat center center/cover;
@@ -47,7 +47,7 @@
     /* ===== NAVIGATION ===== */
     .nav {
       position: absolute;
-      top: 160px;   /* 2–3 line space below title */
+      top: 160px;
       left: 20px;
       display: flex;
       gap: 20px;
@@ -76,49 +76,65 @@
     .pub { background: #92a8d1; }
     .orcid { background: #a6ce39; }
 
+    /* ===== HOME CONTENT ===== */
+    .home {
+      margin: 260px auto 0;
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      line-height: 1.7;
+    }
+
+    .home h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #aad4ff;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.1rem;
+      color: #dddddd;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- ===== TITLE ===== -->
+  <!-- TITLE -->
   <div class="title">Weather Robust Advanced Air Mobility</div>
 
-  <!-- ===== PROFILE PHOTO ===== -->
+  <!-- PHOTO -->
   <img src="assets/images/myphoto.jpg"
        alt="Israel Gebresilasie Kimo"
        class="profile-photo">
 
-  <!-- ===== NAVIGATION ===== -->
+  <!-- NAV -->
   <div class="nav">
     <a href="#about" class="about">About</a>
     <a href="#cfd" class="cfd">CFD & RWIND</a>
     <a href="#aam" class="aam">AAM</a>
     <a href="#literature" class="lit">Literature Review</a>
     <a href="#publications" class="pub">Publications</a>
-    <a href="https://orcid.org/0000-0001-9038-5634"
-       target="_blank"
-       class="orcid">ORCID</a>
-   </div>
-<head>
-  <style>
-    /* ===== FOOTER (CENTER BOTTOM) ===== */
-    footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.2rem;
-      color: #dddddd;
-    }
-  </style>
-</head>
-<body>
-  ...
-  <footer>
-    © 2025 Israel Gebresilasie Kimo
-  </footer>
-</body>
+    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank" class="orcid">ORCID</a>
+  </div>
 
-</html>
+  <!-- HOME CONTENT -->
+  <section class="home" id="about">
+    <h2>Welcome</h2>
 
+    <p>
+      I am Israel Gebresilasie Kimo, a lecturer and researcher in meteorology and hydrology
+      with research interests in urban microclimate, wind–structure interaction, and
+      Advanced Air Mobility (AAM).
+    </p>
+
+    <p>
+      My
