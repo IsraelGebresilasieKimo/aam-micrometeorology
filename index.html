@@ -87,6 +87,27 @@
       font-size: 1.2rem;
       color: #dddddd;
     }
+
+    /* ===== SOCIAL ICONS ===== */
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .social-icons a img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%; /* circular icons */
+      transition: transform 0.2s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1); /* zoom on hover */
+    }
   </style>
 </head>
 
@@ -115,6 +136,24 @@
   <footer>
     © 2025 Israel Gebresilasie Kimo
   </footer>
+
+  <!-- ===== SOCIAL MEDIA LINKS ===== -->
+  <div class="social-icons">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:your.email@example.com">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </a>
+
+    <!-- ORCID -->
+    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank">
+      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
+    </a>
+  </div>
 
 </body>
 </html>
