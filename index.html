@@ -101,12 +101,23 @@
     .social-icons a img {
       width: 36px;
       height: 36px;
-      border-radius: 50%; /* circular icons */
+      border-radius: 50%;
       transition: transform 0.2s;
     }
 
     .social-icons a img:hover {
-      transform: scale(1.1); /* zoom on hover */
+      transform: scale(1.1);
+    }
+
+    /* ===== VIDEO (BOTTOM LEFT) ===== */
+    .corner-video {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      z-index: 900;
     }
   </style>
 </head>
@@ -139,21 +150,24 @@
 
   <!-- ===== SOCIAL MEDIA LINKS ===== -->
   <div class="social-icons">
-    <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/israel-gebresilasie-106a4a219/" target="_blank">
-     <img src="assets/images/linkedin.jpg"
+      <img src="assets/images/linkedin.jpg" alt="LinkedIn">
     </a>
 
-    <!-- Email -->
     <a href="mailto:israel.gebresillase@amu.edu.et">
       <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
     </a>
 
-    <!-- ORCID -->
     <a href="https://orcid.org/0000-0001-9038-5634" target="_blank">
       <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
     </a>
   </div>
+
+  <!-- ===== VIDEO (BOTTOM LEFT) ===== -->
+  <video class="corner-video" autoplay muted loop controls>
+    <source src="assets/aam-demoo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 </body>
 </html>
