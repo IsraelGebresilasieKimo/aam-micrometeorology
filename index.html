@@ -163,11 +163,29 @@
     </a>
   </div>
 
-  <!-- ===== VIDEO (BOTTOM LEFT) ===== -->
-  <video class="corner-video" autoplay muted loop controls>
-    <source src="assets/aam-demoo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+ <!-- ===== VIDEO (BOTTOM LEFT) ===== -->
+<style>
+  .corner-video {
+    position: fixed;
+    bottom: 80px;      /* move UP (increase value = higher) */
+    left: 40px;        /* move RIGHT (increase value = more right) */
+    width: 420px;      /* increase size */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    z-index: 900;
+  }
+</style>
+
+<video class="corner-video" autoplay muted loop controls>
+  <source src="assets/aam-demoo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
 
 </body>
 </html>
