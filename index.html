@@ -163,24 +163,44 @@
     </a>
   </div>
 
- <!-- ===== VIDEO (BOTTOM LEFT) ===== -->
+ <!-- ===== VIDEO WITH TITLE (BOTTOM LEFT) ===== -->
 <style>
-  .corner-video {
+  .video-wrapper {
     position: fixed;
-    bottom: 80px;      /* move UP (increase value = higher) */
-    left: 40px;        /* move RIGHT (increase value = more right) */
-    width: 420px;      /* increase size */
+    bottom: 80px;   /* move UP */
+    left: 40px;     /* move RIGHT */
+    z-index: 900;
+  }
+
+  .video-title {
+    background: rgba(0, 85, 170, 0.9); /* blue background */
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  }
+
+  .corner-video {
+    width: 420px;   /* video size */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    z-index: 900;
   }
 </style>
 
-<video class="corner-video" autoplay muted loop controls>
-  <source src="assets/aam-demoo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="video-wrapper">
+  <div class="video-title">RWIND Simulation</div>
+
+  <video class="corner-video" autoplay muted loop controls>
+    <source src="assets/aam-demoo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
 
 
