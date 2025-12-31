@@ -165,37 +165,34 @@
     
 <!-- ===== VIDEO WITH TITLE (BOTTOM LEFT) ===== -->
 <style>
-  .video-container {
+  .video-wrapper {
     position: fixed;
     bottom: 80px;   /* move UP */
     left: 40px;     /* move RIGHT */
-    width: 420px;
     z-index: 900;
   }
 
   .video-title {
-    position: absolute;
-    top: -45px;   /* places title ABOVE the video */
-    left: 50%;
-    transform: translateX(-50%);
     background: rgba(0, 85, 170, 0.9); /* blue background */
     color: #ffffff;
     font-weight: bold;
-    padding: 8px 18px;
+    text-align: center;
+    padding: 6px 12px;
     border-radius: 10px;
+    margin-bottom: 6px;
     font-size: 1rem;
-    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
   }
 
   .corner-video {
-    width: 100%;
+    width: 420px;   /* video size */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   }
 </style>
 
-<div class="video-container">
+<div class="video-wrapper">
   <div class="video-title">RWIND Simulation</div>
 
   <video class="corner-video" autoplay muted loop controls>
@@ -203,8 +200,6 @@
     Your browser does not support the video tag.
   </video>
 </div>
-
-
 
 
 
