@@ -16,7 +16,7 @@
       position: relative;
     }
 
-    /* ===== TITLE ===== */
+    /* ===== MAIN TITLE ===== */
     .title {
       position: absolute;
       top: 20px;
@@ -29,7 +29,6 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.4);
       white-space: nowrap;
-      text-align: center;
     }
 
     /* ===== PROFILE PHOTO ===== */
@@ -61,15 +60,8 @@
       color: #fff;
       font-weight: bold;
       border-radius: 12px;
-      transition: all 0.3s ease;
     }
 
-    .nav a:hover {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    /* ===== LINK COLORS ===== */
     .home { background: #a6ce39; }
     .about { background: #ff6f61; }
     .cfd { background: #6b5b95; }
@@ -84,53 +76,51 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #dddddd;
     }
 
-    /* ===== SOCIAL ICONS ===== */
-    .social-icons {
+    /* ===== VIDEO CONTAINER ===== */
+    .video-container {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      gap: 12px;
-      z-index: 1000;
+      bottom: 80px;
+      left: 40px;
+      width: 460px;
+      z-index: 900;
     }
 
-    .social-icons a img {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      transition: transform 0.2s;
+    /* ===== VIDEO TITLE (ON TOP OF VIDEO) ===== */
+    .video-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 85, 170, 0.95);
+      color: #ffffff;
+      font-weight: bold;
+      padding: 6px 16px;
+      border-radius: 0 0 10px 10px;
+      font-size: 1rem;
+      z-index: 2;
     }
 
-    .social-icons a img:hover {
-      transform: scale(1.1);
-    }
-
-    /* ===== VIDEO (BOTTOM LEFT) ===== */
+    /* ===== VIDEO ===== */
     .corner-video {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 260px;
+      width: 100%;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      z-index: 900;
+      margin-top: 32px; /* space for title */
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ===== TITLE ===== -->
+  <!-- ===== PAGE TITLE ===== -->
   <div class="title">Weather Robust Advanced Air Mobility</div>
 
   <!-- ===== PROFILE PHOTO ===== -->
-  <img src="assets/images/myphoto.jpg"
-       alt="Israel Gebresilasie Kimo"
-       class="profile-photo">
+  <img src="assets/images/myphoto.jpg" alt="Israel Gebresilasie Kimo" class="profile-photo">
 
   <!-- ===== NAVIGATION ===== -->
   <div class="nav">
@@ -139,71 +129,24 @@
     <a href="cfd.html" class="cfd">CFD & RWIND</a>
     <a href="aam.html" class="aam">AAM</a>
     <a href="#literature" class="lit">Literature Review</a>
-    <a href="#Micrometeorology" class="micro">Micrometeorology</a>
+    <a href="#micrometeorology" class="micro">Micrometeorology</a>
     <a href="https://orcid.org/0000-0001-9038-5634" target="_blank" class="orcid">ORCID</a>
+  </div>
+
+  <!-- ===== VIDEO WITH TITLE ===== -->
+  <div class="video-container">
+    <div class="video-title">RWIND Simulation</div>
+
+    <video class="corner-video" autoplay muted loop controls>
+      <source src="assets/aam-demoo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
     © 2025 Israel Gebresilasie Kimo
   </footer>
-
-  <!-- ===== SOCIAL MEDIA LINKS ===== -->
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/israel-gebresilasie-106a4a219/" target="_blank">
-      <img src="assets/images/linkedin.jpg" alt="LinkedIn">
-    </a>
-
-    <a href="mailto:israel.gebresillase@amu.edu.et">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-    </a>
-
-    <a href="https://orcid.org/0000-0001-9038-5634" target="_blank">
-      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
-    </a>
-  </div>
-    
-<!-- ===== VIDEO WITH TITLE (BOTTOM LEFT) ===== -->
-<style>
-  .video-wrapper {
-    position: fixed;
-    bottom: 80px;   /* move UP */
-    left: 40px;     /* move RIGHT */
-    z-index: 900;
-  }
-
-  .video-title {
-    background: rgba(0, 85, 170, 0.9); /* blue background */
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
-    padding: 6px 12px;
-    border-radius: 10px;
-    margin-bottom: 6px;
-    font-size: 1rem;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-  }
-
-  .corner-video {
-    width: 420px;   /* video size */
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-  }
-</style>
-
-<div class="video-wrapper">
-  <div class="video-title">RWIND Simulation</div>
-
-  <video class="corner-video" autoplay muted loop controls>
-    <source src="assets/aam-demoo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-
-
-
 
 </body>
 </html>
