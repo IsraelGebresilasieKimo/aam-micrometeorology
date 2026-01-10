@@ -68,17 +68,18 @@
     .aam { background: #88b04b; }
     .lit { background: #f7cac9; color: #000; }
     .micro { background: #92a8d1; }
-    .news { background: #4da3ff; }
+    .news { background: #a6ce39; }
 
-    /* ===== VIDEO CONTAINER ===== */
+    /* ===== VIDEO CONTAINER (BOTTOM LEFT) ===== */
     .video-container {
       position: fixed;
-      bottom: 80px;
-      left: 40px;
-      width: 460px;
+      bottom: 20px;
+      left: 20px;
+      width: 420px;
       z-index: 900;
     }
 
+    /* ===== VIDEO TITLE ===== */
     .video-title {
       position: absolute;
       top: 0;
@@ -93,11 +94,30 @@
       z-index: 2;
     }
 
+    /* ===== VIDEO ===== */
     .corner-video {
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
       margin-top: 32px;
+    }
+
+    /* ===== SOCIAL ICONS ===== */
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 12px;
+      z-index: 900;
+    }
+
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: #ffffff;
+      padding: 4px;
     }
 
     /* ===== FOOTER ===== */
@@ -109,36 +129,18 @@
       font-size: 1.1rem;
       color: #dddddd;
     }
-
-    /* ===== SOCIAL MEDIA ICONS (BOTTOM RIGHT) ===== */
-    .social-icons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      gap: 12px;
-      z-index: 1000;
-    }
-
-    .social-icons img {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      transition: transform 0.2s ease;
-    }
-
-    .social-icons img:hover {
-      transform: scale(1.15);
-    }
   </style>
 </head>
 
 <body>
 
+  <!-- ===== PAGE TITLE ===== -->
   <div class="title">Weather Robust Advanced Air Mobility</div>
 
+  <!-- ===== PROFILE PHOTO ===== -->
   <img src="assets/images/myphoto.jpg" alt="Israel Gebresilasie Kimo" class="profile-photo">
 
+  <!-- ===== NAVIGATION ===== -->
   <div class="nav">
     <a href="home.html" class="home">Home</a>
     <a href="about.html" class="about">About Me</a>
@@ -149,16 +151,16 @@
     <a href="aam-news.html" class="news">AAM News</a>
   </div>
 
+  <!-- ===== VIDEO (BOTTOM LEFT) ===== -->
   <div class="video-container">
     <div class="video-title">RWIND Simulation</div>
     <video class="corner-video" autoplay muted loop controls>
       <source src="assets/aam-demoo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
   </div>
 
-  <footer>© 2025 Israel Gebresilasie Kimo</footer>
-
-  <!-- ===== SOCIAL MEDIA LINKS ===== -->
+  <!-- ===== SOCIAL MEDIA ===== -->
   <div class="social-icons">
     <a href="https://www.linkedin.com/in/israel-gebresilasie-106a4a219/" target="_blank">
       <img src="assets/images/linkedin.jpg" alt="LinkedIn">
@@ -170,6 +172,11 @@
       <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
     </a>
   </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 Israel Gebresilasie Kimo
+  </footer>
 
 </body>
 </html>
