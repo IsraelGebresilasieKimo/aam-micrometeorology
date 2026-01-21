@@ -34,7 +34,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
 
-    /* ===== DOCUMENT VIEWER ===== */
+    /* ===== PDF VIEWER ===== */
     .doc-container {
       max-width: 1000px;
       margin: 40px auto;
@@ -46,7 +46,7 @@
 
     iframe {
       width: 100%;
-      height: 600px;
+      height: 650px;
       border: none;
       border-radius: 8px;
     }
@@ -59,10 +59,11 @@
     .download a {
       background: #0b5394;
       color: #ffffff;
-      padding: 10px 20px;
+      padding: 10px 24px;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
+      display: inline-block;
     }
 
     .download a:hover {
@@ -84,27 +85,27 @@
 
   <p>
     This page presents a preliminary research concept focusing on the role of
-    urban micrometeorology in Advanced Air Mobility (AAM).
-    The concept addresses how turbulence, wind shear, gusts, and building-induced
-    flow distortions influence low-altitude aerial operations such as eVTOLs and UAVs.
+    urban micrometeorology in Advanced Air Mobility (AAM). The concept addresses
+    how turbulence, wind shear, gusts, and building-induced flow distortions
+    influence low-altitude aerial operations such as eVTOLs and UAVs.
   </p>
 
   <p>
     The document below outlines the motivation, scientific background,
-    methodological approach, and expected contributions related to CFD-based
-    urban flow modeling and atmospheric boundary-layer processes.
+    methodological approach, and expected scientific contributions related to
+    CFD-based urban flow modeling and atmospheric boundary-layer processes.
   </p>
 
-  <!-- ===== WORD DOCUMENT EMBED ===== -->
+  <!-- ===== PDF DOCUMENT EMBED ===== -->
   <div class="doc-container">
     <iframe
-      src="https://docs.google.com/gview?url=https://israelkimo.github.io/assets/x.pdf &embedded=true"
-
+      src="assets/x.pdf"
+      title="Preliminary Research Concept on Urban Micrometeorology for AAM">
     </iframe>
 
     <div class="download">
       <a href="assets/x.pdf" download>
-        Download Full Research Concept (DOCX)
+        Download Full Research Concept (PDF)
       </a>
     </div>
   </div>
