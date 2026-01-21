@@ -1,46 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Advanced Air Mobility - Israel Gebresilasie Kimo</title>
+  <meta charset="UTF-8">
+  <title>Preliminary Research Concept on Urban Micrometeorology for AAM</title>
+
   <style>
     body {
-      background-color: #f0f4ff; /* soft blue background */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333; /* dark gray text for readability */
-      line-height: 1.8;
-      margin: 40px;
+      background:
+        linear-gradient(rgba(240,248,255,0.92), rgba(240,248,255,0.92)),
+        url("assets/images/background.jpg.jfif") no-repeat center center fixed;
+      background-size: cover;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 40px;
     }
 
     h1 {
-      color: #1a237e; /* dark blue header */
-      font-size: 2.5em;
       text-align: center;
-      margin-bottom: 30px;
+      color: #0b5394;
+      font-size: 2.4em;
+      margin-bottom: 25px;
     }
 
     p {
-      font-size: 1.1em;
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
-      padding: 15px 20px;
-      background-color: #ffffff; /* white paragraph background */
-      border-left: 5px solid #1a237e; /* blue accent border */
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 16px 20px;
+      background: #ffffff;
+      border-left: 6px solid #0b5394;
+      border-radius: 6px;
+      line-height: 1.7;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    /* ===== DOCUMENT VIEWER ===== */
+    .doc-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .download {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .download a {
+      background: #0b5394;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .download a:hover {
+      background: #083b6f;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.95em;
+      color: #555;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Advanced Air Mobility & Urban Wind</h1>
+  <h1>Preliminary Research Concept on Urban Micrometeorology for AAM</h1>
 
-<p>
-Advanced Air Mobility operations occur within the atmospheric boundary layer, where wind shear, turbulence, and building-induced wakes strongly affect flight safety and efficiency. Urban environments introduce complex microclimatic effects that must be assessed using high-resolution modeling approaches.
-</p>
+  <p>
+    This page presents a preliminary research concept focusing on the role of
+    urban micrometeorology in Advanced Air Mobility (AAM).
+    The concept addresses how turbulence, wind shear, gusts, and building-induced
+    flow distortions influence low-altitude aerial operations such as eVTOLs and UAVs.
+  </p>
 
-<p>
-I use CFD tools such as RWIND to investigate pressure fields, velocity distributions, turbulence characteristics, and wake structures around urban geometries. My focus is on interpreting these results in terms of operational risk for low-altitude aerial vehicles.
-</p>
+  <p>
+    The document below outlines the motivation, scientific background,
+    methodological approach, and expected contributions related to CFD-based
+    urban flow modeling and atmospheric boundary-layer processes.
+  </p>
+
+  <!-- ===== WORD DOCUMENT EMBED ===== -->
+  <div class="doc-container">
+    <iframe
+      src="https://docs.google.com/gview?url=https://israelkimo.github.io/assets/docs/x.docx&embedded=true"
+
+    </iframe>
+
+    <div class="download">
+      <a href="assets/docs/x.docx" download>
+        Download Full Research Concept (DOCX)
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Israel Gebresilasie Kimo — Urban Micrometeorology & AAM
+  </footer>
 
 </body>
 </html>
