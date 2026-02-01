@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LiDAR Data Analysis | Israel Gebresilasie Kimo</title>
+  <title>Doppler LiDAR Data Analysis | Israel Gebresilasie Kimo</title>
 
   <style>
     body {
@@ -34,8 +34,8 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
 
-    /* ===== COLAB NOTEBOOK VIEWER ===== */
-    .colab-container {
+    /* ===== NOTEBOOK VIEWER ===== */
+    .notebook-container {
       max-width: 1200px;
       margin: 40px auto;
       background: #ffffff;
@@ -46,7 +46,7 @@
 
     iframe {
       width: 100%;
-      height: 750px;
+      height: 800px;
       border: none;
       border-radius: 8px;
     }
@@ -82,33 +82,33 @@
 
 <body>
 
-  <h1>Doppler LiDAR Data Analysis</h1>
+  <h1>Doppler LiDAR VAD Wind & Turbulence Analysis</h1>
 
   <p>
-    This page presents my Python-based workflow for analyzing Doppler LiDAR
-    observations using the Velocity–Azimuth Display (VAD) technique.
-    The notebook focuses on retrieving wind profiles and turbulence-related
-    quantities from LiDAR measurements, with applications in urban
-    micrometeorology and Advanced Air Mobility (AAM).
+    This page presents my Python-based workflow for processing and analyzing
+    Doppler LiDAR observations using the Velocity–Azimuth Display (VAD) technique.
+    The analysis focuses on retrieving wind profiles and turbulence-related
+    quantities relevant to urban micrometeorology and Advanced Air Mobility (AAM).
   </p>
 
   <p>
-    The analysis is implemented in Google Colab to ensure reproducibility and
-    transparency. The full notebook is embedded below, allowing direct
-    inspection of the code structure, processing steps, and outputs.
+    The Jupyter notebook below is rendered using <strong>nbviewer</strong> to
+    allow direct inspection of the code, methodology, and results.
+    The workflow is fully reproducible and can be executed interactively in
+    Google Colab.
   </p>
 
-  <!-- ===== COLAB NOTEBOOK EMBED ===== -->
-  <div class="colab-container">
+  <!-- ===== NOTEBOOK EMBED (NBVIEWER) ===== -->
+  <div class="notebook-container">
     <iframe
-      src="https://colab.research.google.com/github/IsraelGebresilasieKimo/aam-micrometeorology/blob/main/Python_Workflow_for_Doppler_Lidar_VAD_Wind_and_Turbulence_Analysis.ipynb"
+      src="https://nbviewer.org/github/IsraelGebresilasieKimo/aam-micrometeorology/blob/main/Python_Workflow_for_Doppler_Lidar_VAD_Wind_and_Turbulence_Analysis.ipynb"
       title="Doppler LiDAR VAD Wind and Turbulence Analysis">
     </iframe>
 
     <div class="links">
       <a href="https://colab.research.google.com/github/IsraelGebresilasieKimo/aam-micrometeorology/blob/main/Python_Workflow_for_Doppler_Lidar_VAD_Wind_and_Turbulence_Analysis.ipynb"
          target="_blank">
-        Open in Google Colab
+        Open & Run in Google Colab
       </a>
 
       <a href="https://github.com/IsraelGebresilasieKimo/aam-micrometeorology"
