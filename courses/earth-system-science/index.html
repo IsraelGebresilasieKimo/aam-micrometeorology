@@ -1,15 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Earth System Science</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    /* same style as your main page */
+    background:
+      linear-gradient(rgba(255,244,230,0.88), rgba(255,244,230,0.88)),
+      url("../../assets/images/Niverstokequation1.JPG") no-repeat center center fixed;
+
+    background-size: cover;
+    color: #333;
+    padding: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #e65100;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #e65100;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  h2 {
+    text-align: center;
+    color: #0b5394;
+    margin-top: 40px;
+  }
+
+  /* ===== GRID ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  }
+
+  .card h3 {
+    color: #0b5394;
+    margin-bottom: 10px;
+  }
+
+  .card a {
+    display: block;
+    padding: 10px;
+    margin: 6px 0;
+    background: #e65100;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .card a:hover {
+    background: #bf360c;
+  }
+
+  /* BACK BUTTON */
+  .back {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .back a {
+    background: #0b5394;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .back a:hover {
+    background: #063b6b;
+  }
+
+</style>
+</head>
+
+<body>
+
 <h1>Earth System Science</h1>
 
-<p>Course materials and lecture resources</p>
+<p>
+Welcome to the Earth System Science course. Here you will find lecture notes,
+slides, and learning materials organized by topic.
+</p>
 
-<h2>Lecture Notes</h2>
-<ul>
-  <li><a href="Earth System Science_Chapter one.pdf">Lecture 1</a></li>
-  <li><a href="Earth System Science_Chapter Two_1.pdf">Lecture 2</a></li>
-</ul>
+<div class="grid">
 
-<h2>Slides</h2>
-<ul>
-  <li><a href="slides_week1.pdf">Week 1 Slides</a></li>
-  <li><a href="slides_week2.pdf">Week 2 Slides</a></li>
-</ul>
+  <!-- LECTURES -->
+  <div class="card">
+    <h3>Lecture Notes</h3>
+    <a href="Earth System Science_Chapter one.pdf">Earth System Science_Chapter one</a>
+    <a href="Earth System Science_Chapter Two_1.pdf">Earth System Science_Chapter Two_1</a>
+  </div>
+
+  <!-- SLIDES -->
+  <div class="card">
+    <h3>Slides</h3>
+    <a href="Earth System Science_Chapter Two_2.pdf">Earth System Science_Chapter Two_2</a>
+    <a href="Earth System Science_Chapter Two_3.pdf">Earth System Science_Chapter Two_3</a>
+  </div>
+
+  <!-- ASSIGNMENTS (optional future) -->
+  <div class="card">
+    <h3>Assignments</h3>
+    <a href="assignment1.pdf">Assignment 1</a>
+  </div>
+
+</div>
+
+<div class="back">
+  <a href="../../teaching.html">← Back to Teaching Page</a>
+</div>
+
+</body>
+</html>
