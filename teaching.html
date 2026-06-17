@@ -1,148 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Teaching Materials - Israel Gebresilasie Kimo</title>
+<meta charset="UTF-8">
+<title>Teaching Materials - Israel Gebresilasie Kimo</title>
 
-  <style>
-    body {
-      background:
-        linear-gradient(rgba(255,244,230,0.85), rgba(255,244,230,0.85)),
-        url("assets/images/Niverstokequation1.JPG") no-repeat center center fixed;
-      background-size: cover;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      line-height: 1.8;
-      margin: 0;
-      padding: 40px;
-    }
+<style>
+body {
+  background:
+    linear-gradient(rgba(255,244,230,0.88), rgba(255,244,230,0.88)),
+    url("assets/images/Niverstokequation1.JPG") no-repeat center center fixed;
 
-    h1 {
-      color: #e65100;
-      font-size: 2.5em;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 40px;
+}
 
-    h2 {
-      color: #0b5394;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
+/* ===== TITLE ===== */
+h1 {
+  color: #e65100;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    p {
-      font-size: 1.1em;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 15px 20px;
-      background-color: #ffffff;
-      border-left: 5px solid #e65100;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
+/* ===== DESCRIPTION ===== */
+p {
+  font-size: 1.1em;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-left: 6px solid #e65100;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
 
-    /* ===== COURSE GRID ===== */
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
+/* ===== COURSE GRID ===== */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
 
-    .course-card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+/* ===== COURSE CARD ===== */
+.course-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  border-top: 4px solid #e65100;
+}
 
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-    }
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
 
-    .course-card h3 {
-      color: #0b5394;
-      margin-bottom: 15px;
-      font-size: 1.2em;
-    }
+/* COURSE TITLE */
+.course-card h3 {
+  color: #0b5394;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
 
-    .course-card a {
-      display: inline-block;
-      padding: 10px 18px;
-      background: #e65100;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
+/* BUTTON LINK */
+.course-card a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #e65100;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    .course-card a:hover {
-      background: #bf360c;
-    }
+.course-card a:hover {
+  background: #bf360c;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 0.95em;
-      color: #555;
-    }
-  </style>
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.95em;
+  color: #555;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Teaching Materials</h1>
+<h1>Teaching Materials</h1>
 
-  <p>
-    This page provides structured course materials including lecture notes, assignments,
-    and supporting resources for undergraduate and postgraduate teaching at Arba Minch University.
-    All materials are organized by course for easy student access.
-  </p>
+<p>
+This page provides structured course materials including lecture notes, assignments,
+and supporting resources for undergraduate and postgraduate teaching at Arba Minch University.
+All materials are organized by course for easy student access.
+</p>
 
-<div class="grid">
+<!-- ===== COURSES ===== -->
+<div class="course-grid">
 
-  <div class="card">
+  <div class="course-card">
     <h3>Earth System Science</h3>
-    <a href="courses/earth-system-science/">Open</a>
+    <a href="courses/earth-system-science/">Open Course</a>
   </div>
 
-  <div class="card">
+  <div class="course-card">
     <h3>Atmospheric Dynamics</h3>
-    <a href="courses/atmospheric-dynamics/">Open</a>
+    <a href="courses/atmospheric-dynamics/">Open Course</a>
   </div>
 
-  <div class="card">
+  <div class="course-card">
     <h3>Atmospheric Thermodynamics</h3>
-    <a href="courses/atmospheric-thermodynamics/">Open</a>
+    <a href="courses/atmospheric-thermodynamics/">Open Course</a>
   </div>
 
-  <div class="card">
+  <div class="course-card">
     <h3>Numerical Weather Prediction</h3>
-    <a href="courses/numerical-weather-prediction/">Open</a>
+    <a href="courses/numerical-weather-prediction/">Open Course</a>
   </div>
 
-  <div class="card">
-    <h3>Atmospheric Chemistry</h3>
-    <a href="courses/atmospheric-chemistry-air-quality/">Open</a>
+  <div class="course-card">
+    <h3>Atmospheric Chemistry & Air Quality</h3>
+    <a href="courses/atmospheric-chemistry-air-quality/">Open Course</a>
   </div>
 
-  <div class="card">
+  <div class="course-card">
     <h3>Aviation Meteorology</h3>
-    <a href="courses/aviation-meteorology/">Open</a>
+    <a href="courses/aviation-meteorology/">Open Course</a>
   </div>
 
-  <div class="card">
+  <div class="course-card">
     <h3>Tropical Meteorology</h3>
-    <a href="courses/tropical-meteorology/">Open</a>
+    <a href="courses/tropical-meteorology/">Open Course</a>
   </div>
 
 </div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+© 2026 Israel Gebresilasie Kimo — Teaching Materials Portal
+</footer>
 
 </body>
 </html>
